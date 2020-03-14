@@ -1,0 +1,2 @@
+class TargetersController < ApplicationController
+end
