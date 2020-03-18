@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
-  get 'targets/index'
+  # get 'targets/index'
 
-  get 'groups/index'
+  # get 'groups/index'
 
-  get 'users/index'
+  # get 'users/index'
 
   devise_for :users
+  root to: "homes#index"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root "users#index"
+
+  resources :users
+  resources :groups
+  resources :targeters
+
+
 end
