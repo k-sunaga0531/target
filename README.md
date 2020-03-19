@@ -50,12 +50,13 @@ Things you may want to cover:
 - has_many :targets
 
 
-## users_groupsテーブル
+## group_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|foreign_key: true, null: false|
 |groups_id|integer|foreign_key: true, null: false|
+|user_id|integer|foreign_key: true, null: false|
+
 
 ### Association
 - belong_to  :user
