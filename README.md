@@ -67,7 +67,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|targeter_name|string|null: false|
+|targeter_name|text|null: false|
 |counts|integer|null: false|
 |user_id|integer|foreign_key: true, null: false|
 |groups_id|integer|foreign_key: true, null: false|
