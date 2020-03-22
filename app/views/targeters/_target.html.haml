@@ -4,17 +4,24 @@
       毎日の運動が大切
     .current-group__group-member
       かずほ　しほ　はむお
+  .form
+  = form_for [@group, @targeter] do |f|
+    = f.text_field :targeter_name, class: 'form__targeter', placeholder: 'type a targeter'
+    = f.submit 'Send', class: 'form__submit'
   -# .edit-btn
   -#   編集
 .target-main
   .targets
     .first-target
       .first-target__target-name
-        腕立て1日30回
+        - if targeter.targeter_name.present?
+          %p.targeter-name__name
+            = targeter.targeter_name
+        -# 腕立て1日30回
         -# = link_to "腕立て1日30回", edit_group_targeter_path(@group)
       .first-target__target-counts
       .first-target__target-user
-        かずほ
+        = targeter.user_id_change
     .second-target
       .second-target__target-name
         30分ジョギング

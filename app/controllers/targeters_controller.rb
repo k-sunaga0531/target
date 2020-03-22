@@ -34,14 +34,12 @@ class TargetersController < ApplicationController
   private
 
   def targeter_params
-    params.require(:targeter).permit(:content, :image).merge(user_id: current_user.id)
+    params.require(:targeter).permit(:targeter_name).merge(user_id: current_user.id)
   end
 
   def set_group
     @group = Group.find(params[:group_id])
   end
 
-  def create
-  end
 
 end
