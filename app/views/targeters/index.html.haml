@@ -4,32 +4,35 @@
     = render partial: 'sidebar', locals: { targeter: @targeter }
 
   .target
-    .target-headder
-      .current-group
-        .current-group__group-name
-          毎日の運動が大切
-        .current-group__group-member
-          かずほ　しほ　はむお
-      -# .edit-btn
-      -#   編集
-    .target-main
-      .targets
-        .first-target
-          .first-target__target-name
-            腕立て1日30回
-          .first-target__target-counts
-          .first-target__target-user
-            かずほ
-        .second-target
-          .second-target__target-name
-            30分ジョギング
-          .second-target__target-counts
-          .second-target__target-user
-            しほ
-        .third-target
-          .third-target__target-name
-            回し車で夜中走る
-          .third-target__target-counts
-          .third-target__target-user
-            はむお
+    = render partial: 'target', locals: { targeter: @targeter }
+
+  -# .target
+  -#   .target-headder
+  -#     .current-group
+  -#       .current-group__group-name
+  -#         毎日の運動が大切
+  -#       .current-group__group-member
+  -#         かずほ　しほ　はむお
+  -#     -# .edit-btn
+  -#     -#   編集
+  -#   .target-main
+  -#     .targets
+  -#       .first-target
+  -#         .first-target__target-name
+  -#           腕立て1日30回
+  -#         .first-target__target-counts
+  -#         .first-target__target-user
+  -#           かずほ
+  -#       .second-target
+  -#         .second-target__target-name
+  -#           30分ジョギング
+  -#         .second-target__target-counts
+  -#         .second-target__target-user
+  -#           しほ
+  -#       .third-target
+  -#         .third-target__target-name
+  -#           回し車で夜中走る
+  -#         .third-target__target-counts
+  -#         .third-target__target-user
+  -#           はむお
 
