@@ -3,7 +3,12 @@ class UsersController < ApplicationController
   #   @users = User.all
   # end
 
-  # def new
-  #   @users = User
-  # end
+  def new
+    # @users = User
+  end
+
+  def destroy
+    
+  end
+
 end

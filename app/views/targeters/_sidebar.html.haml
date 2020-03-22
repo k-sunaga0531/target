@@ -1,0 +1,12 @@
+.sidebar-headder
+  -# %h1 所属グループ一覧
+  = link_to "所属グループ一覧", new_group_path
+.sidebar-main
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.group_name
+          .group__target
+            メッセージはまだありません。
