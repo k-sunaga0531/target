@@ -3,8 +3,10 @@
   = link_to "所属グループ一覧", new_group_path
 .sidebar-main
   .groups
-    .group
-      %ul
-        %li 毎日の運動が大切
-        %li 日記を続ける
-        %li お昼にお弁当を持っていく
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.group_name
+          .group__target
+            メッセージはまだありません。
