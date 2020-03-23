@@ -6,13 +6,18 @@ class TargetersController < ApplicationController
     @targeters = @group.targeters.includes(:user)
   end
 
+  # 表示(index)はできるが、保存(create)ができない。
+  # つまりcreateアクションに問題があると思う
+  # でもコードはカリキュラム通り、つまりコントローラー以外に不備がある
+  # 例えば○ルーティング、○アソシエーション、△ビュー、モデル
+
   def create
     @targeter = @group.targeters.new(targeter_params)
     if @targeter.save
       redirect_to group_targeters_path(@group), notice: 'メッセージが送信されました'
     else
       @targeters = @group.targeters.includes(:user)
-      flash.now[:alert] = 'メッセージを入力してください。'
+      flash.now[:alert] = 'ターゲットネームを入力してください。'
       render :index
     end
   end

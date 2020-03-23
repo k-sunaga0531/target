@@ -11,29 +11,31 @@
     = f.submit 'Send', class: 'form__submit'
   -# .edit-btn
   -#   編集
+
+  保存機能は実装。あとはビューの表示
 .target-main
   .targets
     .first-target
-      .first-target__target-name
+      .targeter-name
         - if targeter.targeter_name.present?
           %p.targeter-name__name
-            = targeter.targeter_name
+            = targeter.targeter_name(@user,@group)
         -# 腕立て1日30回
         -# = link_to "腕立て1日30回", edit_group_targeter_path(@group)
-      .first-target__target-counts
-      .first-target__target-user
+      .target-counts
+      .target-user
         = targeter.user_id_change
     .second-target
-      .second-target__target-name
+      .targeter-name
         30分ジョギング
-      .second-target__target-counts
-      .second-target__target-user
+      .target-counts
+      .target-user
         しほ
     .third-target
-      .third-target__target-name
+      .targeter-name
         回し車で夜中走る
-      .third-target__target-counts
-      .third-target__target-user
+      .target-counts
+      .target-user
         はむお
 -# .form
 -#   = form_for [@group, @targeter] do |f|
