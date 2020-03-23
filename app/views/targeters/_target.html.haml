@@ -1,9 +1,10 @@
 .target-headder
   .current-group
     .current-group__group-name
-      毎日の運動が大切
+      = @group.group_name
     .current-group__group-member
-      かずほ　しほ　はむお
+      - @group.users.each do |user|
+        = user.user_name
   .form
   = form_for [@group, @targeter] do |f|
     = f.text_field :targeter_name, class: 'form__targeter', placeholder: 'type a targeter'
