@@ -6,7 +6,7 @@ class Group < ApplicationRecord
 
 
   # def show_currentuser_targeter_name
-  #   if (currentuser_targeter_name = targeter_.currentuser).present?
+  #   if (current_user_targeter_name = targeters.current_user).present?
   #     current_user_targeter_name.targeter_name
   #   else
   #     'まだメッセージはありません。'
