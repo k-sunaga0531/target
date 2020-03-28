@@ -12,7 +12,6 @@
   -# .edit-btn
   -#   編集
 
-  保存機能は実装。あとはビューの表示
 .target-main
   .targets
     .first-target
@@ -20,8 +19,6 @@
         - if targeter.targeter_name.present?
           %p.targeter-name__name
             = targeter.targeter_name(@user,@group)
-        -# 腕立て1日30回
-        -# = link_to "腕立て1日30回", edit_group_targeter_path(@group)
       .target-counts
       .target-user
         = targeter.user_id_change
