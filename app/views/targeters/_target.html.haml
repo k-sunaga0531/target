@@ -2,6 +2,8 @@
   .current-group
     .current-group__group-name
       = @group.group_name
+      = link_to edit__path(group) do
+
     .current-group__group-member
       - @group.users.each do |user|
         = user.user_name
@@ -11,28 +13,29 @@
     = f.submit 'Send', class: 'form__submit'
   -# .edit-btn
   -#   編集
-
 .target-main
   .targets
     .first-target
-      .targeter-name
+      .first-target__target-name
         - if targeter.targeter_name.present?
           %p.targeter-name__name
-            = targeter.targeter_name(@user,@group)
-      .target-counts
-      .target-user
+            = targeter.targeter_name
+        -# 腕立て1日30回
+        -# = link_to "腕立て1日30回", edit_group_targeter_path(@group)
+      .first-target__target-counts
+      .first-target__target-user
         = targeter.user_id_change
     .second-target
-      .targeter-name
+      .second-target__target-name
         30分ジョギング
-      .target-counts
-      .target-user
+      .second-target__target-counts
+      .second-target__target-user
         しほ
     .third-target
-      .targeter-name
+      .third-target__target-name
         回し車で夜中走る
-      .target-counts
-      .target-user
+      .third-target__target-counts
+      .third-target__target-user
         はむお
 -# .form
 -#   = form_for [@group, @targeter] do |f|
