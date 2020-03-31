@@ -65,12 +65,21 @@
           padding-top: 10px;
           padding-left: 10px;
         }
+        &__edit-btn a{
+          position: absolute;
+          top: 28px;
+          right: 35px;
+          font-size: 16px;
+          border :white solid 1px;
+          height: 40px;
+          padding: 0 20px 0 20px;
+          line-height: 40px;
+          display: flex;
+          justify-content: flex-end;
+          color: white;
+          text-decoration: none;
+        }
       }
-      // .edit-btn{
-      //   font-size: 20px;
-      //   line-height: 60px;
-      //   margin-left: 850px;
-      // }
     }
     .target-main{
       border-top: 2px solid whitesmoke;
