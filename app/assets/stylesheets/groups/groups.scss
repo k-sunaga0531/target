@@ -7,10 +7,11 @@
   
 
   .sidebar{
-    height: 100vh;
-    width: 20vw;
+    // min-height: 100vh;
+    min-width: 20vw;
     background-color: gray;
     color: white;
+    height: 800px;
     .sidebar-headder{
       height: 100px;
       width: 100%;
@@ -24,7 +25,8 @@
     }
     .sidebar-main{
       border-top: 2px solid whitesmoke;
-      height: calc(100% - 300px);
+      height: calc(100% - 100px);
+      overflow: auto;
       .groups{
         margin: 30px;
         .group{
@@ -45,7 +47,6 @@
   }
 
   .target{
-    height: 100vh;
     width: 80vw;
     background-color: gray;
     border-left: 2px solid whitesmoke;
@@ -83,10 +84,10 @@
     }
     .target-main{
       border-top: 2px solid whitesmoke;
-      height: calc(100% - 300px);
+      height: calc(100% - 100px);
       .targets{
         justify-content: space-between;
-        height: calc(100vh - 100px);
+        height: 100%;
         display: flex;
         .first-target{
           height: 100%;
