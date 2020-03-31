@@ -3,6 +3,7 @@
     .current-group__group-name
       = @group.group_name
 
+
     .current-group__group-member
       - @group.users.each do |user|
         = user.user_name
