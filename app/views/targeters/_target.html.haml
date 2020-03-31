@@ -2,9 +2,14 @@
   .current-group
     .current-group__group-name
       = @group.group_name
+
     .current-group__group-member
       - @group.users.each do |user|
         = user.user_name
+    .current-group__edit-btn
+      = link_to "edit", edit_group_path(@group) 
+
+
   .form
   = form_for [@group, @targeter] do |f|
     = f.text_field :targeter_name, class: 'form__targeter', placeholder: 'type a targeter'
