@@ -1,5 +1,9 @@
 .sidebar-headder
-  = link_to "所属グループ一覧", new_group_path
+  .new-group
+    = link_to "新規グループ作成", new_group_path
+  .edit-user
+    = link_to "ユーザー編集", edit_user_path(current_user) 
+
 .sidebar-main
   .groups
     - current_user.groups.each do |group|

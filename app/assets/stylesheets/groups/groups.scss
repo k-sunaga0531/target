@@ -15,10 +15,14 @@
     .sidebar-headder{
       height: 100px;
       width: 100%;
-      font-size: 30px;
+      font-size: 5px;
       text-align: center;
-      line-height: 100px;
-      a{
+      font-size: 20px;
+      .new-group a{
+        color: white;
+        text-decoration: none;
+      }
+      .edit-user a{
         color: white;
         text-decoration: none;
       }
