@@ -4,12 +4,9 @@ class TargetersController < ApplicationController
   def index
     @targeter = Targeter.new
     @targeters = @group.targeters.includes(:user)
+    @name = Targeter.find { |targeter| targeter.user_id == current_user.id && targeter.group_id == @group.id}
+    # @targeter_name = name.find("targeter_name")
   end
-
-  # 表示(index)はできるが、保存(create)ができない。
-  # つまりcreateアクションに問題があると思う
-  # でもコードはカリキュラム通り、つまりコントローラー以外に不備がある
-  # 例えば○ルーティング、○アソシエーション、△ビュー、モデル
 
   def create
     @targeter = @group.targeters.new(targeter_params)
