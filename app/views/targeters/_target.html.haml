@@ -19,25 +19,18 @@
   -#   編集
 .target-main
   .targets
-    .first-target
-      .first-target__target-name
+    .target
+      .target__target-name
         %p.targeter-name__name
           = @name.targeter_name
-      .first-target__target-counts
-      .first-target__target-user
+      .target__target-counts
+      .target__target-user
         = current_user.user_name
-    -# .second-target
-    -#   .second-target__target-name
-    -#     30分ジョギング
-    -#   .second-target__target-counts
-    -#   .second-target__target-user
-    -#     しほ
-    -# .third-target
-    -#   .third-target__target-name
-    -#     回し車で夜中走る
-    -#   .third-target__target-counts
-    -#   .third-target__target-user
-    -#     はむお
+
+        -# 今のグループのユーザーを取得
+        -# そのユーザーのタイトルを表示
+        -# そのユーザーの名前を表示
+
 -# .form
 -#   = form_for [@group, @targeter] do |f|
 -#     = f.text_field :targeter_name, class: 'form__targeter', placeholder: 'type a targeter'
