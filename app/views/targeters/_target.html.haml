@@ -20,21 +20,33 @@
   -#   編集
 .target-main
   .targets
-    .first-target
-      .first-target__target-name
+    .target
+      .target-name
         %p.targeter-name__name
           = @name.targeter_name
-      .first-target__target-counts
-        %canvas#testcanvas2
-        %p#target1 ここの色が変わります
+      .target-counts
+        -# %canvas#testcanvas2
+        %p#target1
         %input{:onclick => "changeColor('target1');", :type => "button", :value => " ボタン "}/
-        %p#target2 ここの色が変わります
+        %p#target2
         %input{:onclick => "changeColor('target2');", :type => "button", :value => " ボタン "}/
-        %p#target3 ここの色が変わります
+        %p#target3
         %input{:onclick => "changeColor('target3');", :type => "button", :value => " ボタン "}/
-        %p#target4 ここの色が変わります
+        %p#target4
         %input{:onclick => "changeColor('target4');", :type => "button", :value => " ボタン "}/
-      .first-target__target-user
+        %p#target5
+        %input{:onclick => "changeColor('target5');", :type => "button", :value => " ボタン "}/
+        %p#target6
+        %input{:onclick => "changeColor('target6');", :type => "button", :value => " ボタン "}/
+        %p#target7
+        %input{:onclick => "changeColor('target7');", :type => "button", :value => " ボタン "}/
+        %p#target8
+        %input{:onclick => "changeColor('target8');", :type => "button", :value => " ボタン "}/
+        %p#target9
+        %input{:onclick => "changeColor('target9');", :type => "button", :value => " ボタン "}/
+        %p#target10
+        %input{:onclick => "changeColor('target10');", :type => "button", :value => " ボタン "}/
+      .target-user
         = current_user.user_name
     -# .second-target
     -#   .second-target__target-name

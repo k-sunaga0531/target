@@ -93,64 +93,34 @@
         justify-content: space-between;
         height: 100%;
         display: flex;
-        .first-target{
+        .target{
           height: 100%;
           width: 300px;
           background-color: skyblue;
+          position: relative;
           // margin-left: 20px;
-          &__target-name{
+          .target-name{
             font-size: 20px;
             text-align: center;
             padding-top: 15px;
+            color: white;
+            padding-bottom: 10px;
           }
-          &__target-counts{
-            .testcanvas2{
+          .target-counts{
+            p{
               border: solid 1px black;
-              width:100px;
-              height:50px;
+              width:150px;
+              height:35px;
               background-color:white;
+              margin: 0 auto;
               }
           }
-          &__target-user{
+          .target-user{
             font-size: 20px;
             text-align: center;
-            padding-top: 600px;
-          }
-        }
-        .second-target{
-          height: 100%;
-          width: 300px;
-          background-color: skyblue;
-          &__target-name{
-            font-size: 20px;
-            text-align: center;
-            padding-top: 15px;
-          }
-          &__target-counts{
-
-          }
-          &__target-user{
-            font-size: 20px;
-            text-align: center;
-            padding-top: 600px;
-          }
-        }
-        .third-target{
-          height: 100%;
-          width: 300px;
-          background-color: skyblue;
-          &__target-name{
-            font-size: 20px;
-            text-align: center;
-            padding-top: 15px;
-          }
-          &__target-counts{
-
-          }
-          &__target-user{
-            font-size: 20px;
-            text-align: center;
-            padding-top: 600px;
+            position: absolute;
+            bottom: 15px;
+            margin-left: 110px;
           }
         }
       }
