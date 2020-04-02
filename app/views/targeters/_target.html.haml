@@ -1,3 +1,4 @@
+%script{:src => "target.js"}
 .target-headder
   .current-group
     .current-group__group-name
@@ -24,6 +25,15 @@
         %p.targeter-name__name
           = @name.targeter_name
       .first-target__target-counts
+        %canvas#testcanvas2
+        %p#target1 ここの色が変わります
+        %input{:onclick => "changeColor('target1');", :type => "button", :value => " ボタン "}/
+        %p#target2 ここの色が変わります
+        %input{:onclick => "changeColor('target2');", :type => "button", :value => " ボタン "}/
+        %p#target3 ここの色が変わります
+        %input{:onclick => "changeColor('target3');", :type => "button", :value => " ボタン "}/
+        %p#target4 ここの色が変わります
+        %input{:onclick => "changeColor('target4');", :type => "button", :value => " ボタン "}/
       .first-target__target-user
         = current_user.user_name
     -# .second-target

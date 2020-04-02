@@ -104,7 +104,12 @@
             padding-top: 15px;
           }
           &__target-counts{
-
+            .testcanvas2{
+              border: solid 1px black;
+              width:100px;
+              height:50px;
+              background-color:white;
+              }
           }
           &__target-user{
             font-size: 20px;
