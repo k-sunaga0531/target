@@ -25,11 +25,8 @@
           = @name.targeter_name
       .target__target-counts
       .target__target-user
-        = user.user_name
-
-        -# 今のグループのユーザーを取得
-        -# そのユーザーのタイトルを表示
-        -# そのユーザーの名前を表示
+        %p.targeter-user__name
+          = @user_name.user_name
 
 -# .form
 -#   = form_for [@group, @targeter] do |f|
