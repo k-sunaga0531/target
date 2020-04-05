@@ -7,7 +7,6 @@
   
 
   .sidebar{
-    // min-height: 100vh;
     min-width: 20vw;
     background-color: gray;
     color: white;
@@ -18,13 +17,16 @@
       font-size: 5px;
       text-align: center;
       font-size: 20px;
-      .new-group a{
-        color: white;
-        text-decoration: none;
-      }
-      .edit-user a{
-        color: white;
-        text-decoration: none;
+      .link{
+        padding-top: 20px;
+        .new-group a{
+          color: white;
+          text-decoration: none;
+        }
+        .edit-user a{
+          color: white;
+          text-decoration: none;
+        }
       }
     }
     .sidebar-main{
@@ -84,6 +86,9 @@
           color: white;
           text-decoration: none;
         }
+      }
+      .new_targeter{
+        padding-top: 70px;
       }
     }
     .target-main{
