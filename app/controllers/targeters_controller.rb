@@ -5,6 +5,9 @@ class TargetersController < ApplicationController
     @targeter = Targeter.new
     @targeters = @group.targeters.includes(:user)
     @name = Targeter.find { |targeter| targeter.user_id == current_user.id && targeter.group_id == @group.id}
+    # name = Targeter.find { |targeter| targeter.group_id == @group.id }
+    # @name = Targeter.find { |targeter| @group.user.user_id == targeter.user_id }
+
   end
 
   def create
