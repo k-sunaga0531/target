@@ -23,6 +23,7 @@
       .target
         .target-name
           %p.targeter-name__name
+            -# = @name.current_user.id.target_name
             = @name.targeter_name
         .target-counts
           %p#target1{:onclick => "changeColor('target1');"}/
