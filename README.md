@@ -1,13 +1,13 @@
 ## README
 
-## Name（アプリケーション名称）
+## Name
 ### Target
 
-## Overview（概要）
+## Overview
 ### 自らと他者の目標達成を比較できるアプリケーション
 一つのグループの中で、各人が目標(Target)を設定し、達成したらカウントを上昇させる。
 
-## Production background（製作背景）
+## Production background
 ### 三日坊主を防ぐため。自己評価をするため。
 
 一般的なToDoアプリは、自らの継続しか記録が出来ない。  
@@ -21,11 +21,11 @@
 
 以上の想いから、Targetを製作した。  
 
-## Demo（サンプル画像）
+## Demo
 ![サンプル画像1](target.sample.view1.png)
 ![サンプル画像2](target.sample.view2.png)
 
-## Future plans（今後実装予定の内容）
+## Future plans
 カウンター内部か横に、数値を表示する。  
 カウンターが一番上まで来たら、"おめでとうメッセージ"などを表示する。  
 クリックだけでなく、スライドでも、カウンターの色を変えられるようにする。  
