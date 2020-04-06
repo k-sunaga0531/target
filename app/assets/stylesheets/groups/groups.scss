@@ -4,8 +4,6 @@
   display: flex;
 
   
-  
-
   .sidebar{
     min-width: 20vw;
     background-color: gray;
@@ -55,12 +53,12 @@
   .target{
     width: 80vw;
     background-color: gray;
-    border-left: 2px solid whitesmoke;
     color: white;
     .target-headder{
       height: 100px;
       width: 100%;
       display: flex;
+      border-left: 2px solid whitesmoke;
       .current-group{
         &__group-name{
           font-size: 25px;
@@ -94,16 +92,22 @@
     .target-main{
       border-top: 2px solid whitesmoke;
       height: calc(100% - 100px);
+      overflow: hidden;
       .targets{
         justify-content: space-between;
         height: 100%;
         display: flex;
+        overflow: hidden;
         .target{
+          overflow: hidden;
           height: 100%;
           width: 300px;
-          background-color: skyblue;
+          background-color: gray;
           position: relative;
-          // margin-left: 20px;
+          border-right: 2px solid whitesmoke;
+          border-left: 2px solid whitesmoke;
+          justify-content: center;
+          align-items: center;
           .target-name{
             font-size: 20px;
             text-align: center;
@@ -238,7 +242,9 @@
             text-align: center;
             position: absolute;
             bottom: 15px;
-            margin-left: 110px;
+            // margin-left: 130px;
+            width: 100%;
+            height: 50px;
           }
         }
       }
