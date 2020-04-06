@@ -1,8 +1,9 @@
 .sidebar-headder
-  .new-group
-    = link_to "新規グループ作成", new_group_path
-  .edit-user
-    = link_to "ユーザー編集", edit_user_path(current_user) 
+  .link
+    .new-group
+      = link_to "新規グループ作成", new_group_path
+    .edit-user
+      = link_to "アカウント編集", edit_user_path(current_user) 
 
 .sidebar-main
   .groups
@@ -12,5 +13,3 @@
           .group__name
             = group.group_name
           .group__target
-            -# = group.show_currentuser_targeter_name
-            -# = targeter.targeter_name
