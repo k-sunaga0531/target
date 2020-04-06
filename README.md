@@ -1,30 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Name（アプリケーション名称）
+### Target
 
-Things you may want to cover:
+## Overview（概要）
+### 自らと他者の目標達成度を比較できるアプリケーション
+一つのグループの中で、各人が目標(Target)を設定し、達成したらカウントを上昇させる。
 
-* Ruby version
+## Production background（製作背景）
+### 三日坊主を防ぐため
 
-* System dependencies
+一般的なToDoアプリは、自らの記録しか表示ができない。
+私は、そこに問題点が２つあると考えた。
+一つは、個人の意志に依存するため三日坊主にも繋がりやすいこと。
+二つめは、自分の努力を客観的に評価が出来ないこと。
 
-* Configuration
+そこで他者の記録も表示をすれば、客観的な評価と、自分を律することに繋がるのではないかと考えた。
+他者の記録と比較をすることで、自らの記録の優劣を知ることができる。
+諦めそうになった時、仲間の頑張りを見て、もう一度頑張ろうと思うことができる。
 
-* Database creation
+そうした効果を狙って、Targetを製作した。
 
-* Database initialization
+## Demo
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Future plans
 
 
-## usersテーブル
+## DB
+### usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -32,25 +35,25 @@ Things you may want to cover:
 |email|string|null: false, unique: true|
 |password|string|null: false, unique: true|
 
-### Association
+#### Association
 - has_many :groups_users
 - has_many :groups, through: :groups_users
 - has_many :targets
 
 
-## groupsテーブル
+### groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false|
 
-### Association
+#### Association
 - has_many :groups_users
 - has_many :users, through: :groups_users
 - has_many :targets
 
 
-## group_usersテーブル
+### group_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -58,12 +61,12 @@ Things you may want to cover:
 |user_id|integer|foreign_key: true, null: false|
 
 
-### Association
+#### Association
 - belong_to  :user
 - belong_to :group
 
 
-## targetersテーブル
+### targetersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -72,6 +75,6 @@ Things you may want to cover:
 |user_id|integer|foreign_key: true, null: false|
 |groups_id|integer|foreign_key: true, null: false|
 
-### Association
+#### Association
 - belong_to :user
 - belong_to :group
