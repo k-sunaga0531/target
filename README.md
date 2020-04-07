@@ -2,7 +2,7 @@
 ### Target
 
 ## :pencil2: Overview
-### 自らと他者の目標達成を比較できるアプリケーション
+### 自分と他者の目標達成を比較できるアプリケーション
 一つのグループの中で、各人が目標(Target)を設定し、達成したらカウントを上昇させる。
 
 ## :mag_right: Production background
