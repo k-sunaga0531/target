@@ -2,10 +2,25 @@
   background-color: gray;
   min-width: 100vw;
   min-height: 100vh;
-  .btn{
+  display: block;
+  .title {
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 130px;
+    .main-title{
+      font-size: 50px;
+    }
+    .sub-title{
+      padding-top: 10px;
+      font-size: 25px;
+    }
+  }
+  .btn {
     font-size: 30px;
-    margin: auto;
     display: flex;
+    padding: 13% 0;
     .home-btn {
       height: 42px;
       width: 120px;
@@ -24,6 +39,7 @@
       border: solid 1px white;
       border-radius: 5px;
       padding: 5px;
+      margin-left: auto;
       a{
         display: block;
         text-decoration: none;
@@ -37,6 +53,7 @@
       border-radius: 5px;
       padding: 5px;
       margin-left: 100px;
+      margin-right: auto;
       a{
         display: block;
         text-decoration: none;
