@@ -1,0 +1,47 @@
+.wrapper{
+  background-color: gray;
+  min-width: 100vw;
+  min-height: 100vh;
+  .btn{
+    font-size: 30px;
+    margin: auto;
+    display: flex;
+    .home-btn {
+      height: 42px;
+      width: 120px;
+      border: solid 1px white;
+      border-radius: 5px;
+      padding: 5px;
+      a{
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .new-btn {
+      height: 42px;
+      width: 120px;
+      border: solid 1px white;
+      border-radius: 5px;
+      padding: 5px;
+      a{
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .login-btn {
+      height: 42px;
+      width: 120px;
+      border: solid 1px white;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 100px;
+      a{
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
