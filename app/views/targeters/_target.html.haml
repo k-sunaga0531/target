@@ -8,9 +8,10 @@
     .current-group__group-member
       - @group.users.each do |user|
         = user.user_name
-    .current-group__edit-btn
+    .current-group__edit-group-btn
       = link_to "グループ編集", edit_group_path(@group) 
-
+    .current-group__edit-user-btn
+      = link_to "アカウント編集", edit_user_path(current_user) 
 
   -# .form
   -# = form_for [@group, @targeter] do |f|
@@ -24,7 +25,8 @@
         .target-name
           %p.targeter-name__name
             -# = @name.current_user.id.target_name
-            = @name.targeter_name
+            -# = @name.targeter_name
+            ああ
         .target-counts
           %p#target1{:onclick => "changeColor('target1');"}/
           %p#target2{:onclick => "changeColor('target2');"}/
