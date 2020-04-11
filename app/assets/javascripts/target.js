@@ -8,6 +8,9 @@ function changeColor(idname){
     obj.style.backgroundColor = 'powderblue';  //背景色を青にする
 }
 
+window.addEventListener("load", changeColor);
+
+
 
 // function canvasClickaka() {
 //   var cvs = document.getElementById('testcanvas2');
@@ -15,3 +18,4 @@ function changeColor(idname){
 //   byouga.fillStyle = "red";
 //   byouga.fillRect(50, 50, 70, 70);
 // }
+
