@@ -5,15 +5,15 @@
       =link_to "　ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
     .account-page__inner--right.user-form
       = form_for(current_user) do |f|
-        .field-name
-          .field-name-lavel
+        .field
+          .field-lavel
             = f.label :名前
-          .field-name-input
+          .field-input
             = f.text_field :user_name, autofocus: true, autocomplete: "user_name"
-        .field-email
-          .field-email-label
+        .field
+          .field-label
             = f.label :メールアドレス
-          .field-email-input
+          .field-input
             = f.email_field :email, autocomplete: "email"
         .actions
           = f.submit "更新", class: 'btn'
