@@ -293,14 +293,29 @@
   min-height: 100vh;
   color: white;
   .account-page__header{
+    height: 300px;
+    line-height: 300px;
+    // width: 100%;
     font-size: 30px;
-    margin: auto;
-    display: block;
+    // margin: auto;
+    // display: block;
+    display: flex;
+    margin-left: 470px;
   }
   .user-form{
     font-size: 20px;
+    .field-name{
+      height: 120px;
+      font-size: 20px;
+      margin-left: 470px;
+    }
+    .field-email{
+      height: 120px;
+      font-size: 20px;
+      margin-left: 470px;    }
   }
   .actions{
     font-size: 30px;
+    margin-left: 470px;
   }
 }
