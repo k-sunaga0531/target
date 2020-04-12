@@ -1,7 +1,7 @@
 #account-page.account-page
   .account-page__inner.clearfix
     .account-page__inner--left.account-page__header
-      %h3 アカウントの編集
+      %h3 アカウント編集
       =link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
     .account-page__inner--right.user-form
       = form_for(current_user) do |f|
@@ -16,4 +16,4 @@
           .field-input
             = f.email_field :email, autocomplete: "email"
         .actions
-          = f.submit "更新", class: 'btn'
+          = f.submit "Update Account", class: 'btn'
