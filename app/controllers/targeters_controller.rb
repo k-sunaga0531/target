@@ -4,9 +4,9 @@ class TargetersController < ApplicationController
   def index
     @targeter = Targeter.new
     @targeters = @group.targeters.includes(:user)
-    # @name = Targeter.find { |targeter| targeter.user_id == current_user.id && targeter.group_id == @group.id}
-    # name = Targeter.find { |targeter| targeter.group_id == @group.id }
-    # @name = Targeter.find { |targeter| @group.user.user_id == targeter.user_id }
+    # @targeterss = Targeter.find { |targeter| targeter.user_id == current_user.id && targeter.group_id == @group.id}
+    @targeter_names = Targeter.find { |targeter| targeter.group_id == @group.id && targeter.user_id == current_user.id}
+    # @targetersss = @targeterss.find { |targeter| targeterss == @group.user_id }
   end
 
   def create
