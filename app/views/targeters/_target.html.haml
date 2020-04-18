@@ -13,7 +13,10 @@
     .current-group__edit-user-btn
       = link_to "アカウント編集", edit_user_path(current_user) 
 
-
+  -# .form
+  -# = form_for [@group, @targeter] do |f|
+  -#   = f.text_field :targeter_name, class: 'form__targeter', placeholder: '新しいターゲット'
+  -#   = f.submit '作成', class: 'form__submit'
 
 -# ターゲットのIDと、userのIDを一致させたい
 
@@ -23,8 +26,6 @@
       .target
         .target-name
           %p.targeter-name__name
-            -# = @name.current_user.id.target_name
-            -# = @group.targeters.targeter_name
             = @targeter_names.targeter_name
         .target-counts
           %p#target1{:onclick => "changeColor('target1');"}/
